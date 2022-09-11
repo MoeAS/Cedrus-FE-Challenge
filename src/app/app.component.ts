@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollSpyService } from 'ng-spy';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Cedrus-FE';
+
+  constructor(private spyService: ScrollSpyService) {}
+  
+  ngAfterViewInit() {
+    this.spyService.spy({ thresholdBottom: 50 });
+  }
 }

@@ -1,0 +1,46 @@
+.contact{
+  font-family: 'Roboto';
+  color: #262262;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.title{
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #f05432;
+  margin-bottom: 3rem;
+}
+
+.feature{
+  padding: 4rem 4rem 2rem;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 8rem;
+}
+
+.btn1 {
+  background-color:#F05432;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: white;
+  width: 25vh;
+}
+
+.page {
+  background-color: #f3f6fa;
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}

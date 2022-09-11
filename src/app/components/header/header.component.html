@@ -1,0 +1,23 @@
+<nav id="navb" class="navbar navbar-default navbar-fixed-top navbar card-bordered sticky-top navbar-expand-lg navbar-light bg-alt-lvl2 pt-3 pb-3 d-flex" style="background-color: white;">
+  <a class="navbar-brand" href="#" style="padding: 10px; margin-left: auto; margin-right: auto;"></a>
+  <a class="navbar-brand" style="cursor: pointer;" (click)="onClick3()">
+    <img src="/assets/images/cedrus 1.png" width="100%">
+  </a>
+
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar = !toggleNavbar" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+
+  <div class="collapse navbar-collapse pt-3" id="navbarNav" [ngbCollapse]="toggleNavbar" style="margin-left: 5vw">
+    <ul class="navbar-nav fs-6 text-uppercase fw-500">
+      <li class="nav-item ms-3 me-3">
+        <a spyOn="about" activeClass="itemactive" [class]="class1" style="cursor: pointer;" (click)="onClick1()">About</a>
+      </li>
+      <li class="nav-item">
+        <a spyOn="contact" activeClass="itemactive" [class]="class2" style="cursor: pointer;" (click)="onClick2()">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,57 @@
+<div class="ps-5 fw-500 fs-3 d-flex justify-content-start align-items-end pb-3" style="height: 8rem;">
+  <span class="contact"> .02 CONTACT US </span>
+</div>
+
+<form class="page" [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
+  <div class="row feature flex-column flex-sm-row">
+
+
+    <div class="col mb-5 mb-sm-0">
+      <div class="input-container">
+        <div class="title fw-500"> *Full Name </div>
+        <input class="form-control" size="30" id="fullName" type="text" placeholder="John Doe" formControlName="fullName">
+        <span
+        *ngIf="!contactUsForm.get('fullName')!.valid && contactUsForm.get('fullName')!.touched"
+        class="help-block" style="color:red"> Please enter a valid name! </span>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="input-container">
+        <div class="title fw-500"> *Email </div>
+        <input class="form-control" size="30" id="email" type="text" placeholder="johndoe@email.com" formControlName="email">
+        <span
+        *ngIf="!contactUsForm.get('email')!.valid && contactUsForm.get('email')!.touched"
+        class="help-block" style="color:red"> Please enter a valid email! </span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row feature">
+    <div class="col">
+      <div class="input-container">
+        <div class="title fw-500">*Message</div>
+        <textarea class="form-control" id="message" type="text" formControlName="message" placeholder="Drop us a line with questions or to learn more about joining our team!" rows="40" style="height: 15rem;"></textarea>
+        <span
+        *ngIf="!contactUsForm.get('message')!.valid && contactUsForm.get('message')!.touched"
+        class="help-block" style="color:red"> Please enter a valid message! </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row feature">
+    <div class="col">
+      <div class="submit-button">
+        <button
+        [disabled] = "!contactUsForm.get('fullName')!.valid || !contactUsForm.get('email')!.valid || !contactUsForm.get('message')!.valid"
+        type="submit" class="btn1 row btn rounded-pill btn-lg mb-5 shadow fs-4 fw-500">Submit</button>
+        <img
+      *ngIf="isSubmitted" style="margin-left: 10vh"
+      src="/assets/images/ThankYouMsg.png"
+        >
+      </div>
+    </div>
+  </div>
+
+</form>
