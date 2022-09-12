@@ -7,8 +7,8 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  class1: string = "nav-link item";
-  class2: string = "nav-link item";
+  // class1: string = "nav-link item";
+  // class2: string = "nav-link item";
   toggleNavbar = true;
 
   constructor() { }
@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
   }
 
 
-  onClick1(){
+  AboutButtonHandler(){
     document.getElementById("about")!.scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
     // this.class1 = "nav-link item active";
   }
 
-  onClick2(){
+  ContactUsButtonHandler(){
     document.getElementById("contact")!.scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
     // this.class2 = "nav-link item active";
   }
 
-  onClick3(){
+  HomeButtonHandler(){
     document.getElementById("home")!.scrollIntoView({
       behavior: "smooth",
       block: "start",

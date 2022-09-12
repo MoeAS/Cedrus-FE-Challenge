@@ -1,5 +1,5 @@
 
-.text1 {
+.motto {
   color: #F05432;
   font-family: 'Roboto';
   font-style: normal;
@@ -9,7 +9,7 @@
   font-variant: small-caps;
 }
 
-.text2 {
+.title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
@@ -18,7 +18,7 @@
   margin-bottom: 8vh;
 }
 
-.text3 {
+.description {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -35,10 +35,14 @@
   width: 30vh;
 }
 
-.text4 {
+.inc_text {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   color: #878787;
+}
+
+.img{
+  max-width: 100%;
 }

@@ -5,6 +5,10 @@
   font-weight: 700;
 }
 
+.contact-height{
+  height: 8rem;
+}
+
 .title{
   font-style: normal;
   font-size: 22px;
@@ -43,4 +47,16 @@ input.ng-invalid.ng-touched {
 
 textarea.ng-invalid.ng-touched {
   border: 1px solid red;
+}
+
+.warning {
+  color:red;
+}
+
+.submitted-img {
+  margin-left: 10vh
+}
+
+textarea{
+  resize: none;
 }

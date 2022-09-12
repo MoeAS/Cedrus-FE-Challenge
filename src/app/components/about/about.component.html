@@ -1,125 +1,15 @@
-<div class="ps-5 fw-500 fs-3 d-flex justify-content-start align-items-end pb-3" style="height: 8rem;">
+<div class="ps-5 fw-500 fs-3 d-flex justify-content-start align-items-end pb-3 about-height">
   <span class="about"> .01 ABOUT </span>
 </div>
 
-<div class="d-flex flex-row flex-wrap justify-content-center align-items-center align-content-stretch h-100 w-100" style="min-height: 50rem;">
+<div class="d-flex flex-row flex-wrap justify-content-center align-items-center align-content-stretch h-100 w-100 class-height">
   <div class="row body d-flex flex-row flex-wrap justify-content-between align-items-baseline align-content-start pb-5">
 
-    <div class="item col-12 col-md-6 col-lg-3">
-
-      <div>
-        <img src="/assets/images/intuitive acj.png">
-      </div>
-
-      <div>
-        <div class="about mt-3 mb-3"> Intuitive </div>
-          <div class="text fs-5">
-            For Surgeons, By Surgeons. Software that intuitively follows your practice workflow.
-          </div>
-      </div>
+    <div class="item col-12 col-md-6 col-lg-3" *ngFor="let item of items">
+    
+      <app-items img="{{item.img}}" title="{{item.title}}" description="{{item.description}}"></app-items>
 
     </div>
-
-    <div class="item col-12 col-md-6 col-lg-3">
-
-      <div>
-        <img src="/assets/images/smart acj 1.png">
-      </div>
-
-      <div>
-        <div class="about mt-3 mb-3"> Smart </div>
-          <div class="text fs-5">
-            Using the power of artificial intelligence to your advantage.
-          </div>
-      </div>
-
-    </div>
-
-    <div class="item col-12 col-md-6 col-lg-3">
-
-      <div>
-        <img src="/assets/images/Saffordable acj.png">
-      </div>
-
-      <div>
-        <div class="about mt-3 mb-3"> Affordable </div>
-          <div class="text fs-5">
-            No expensive capital equipment required.
-          </div>
-      </div>
-
-    </div>
-
-    <div class="item col-12 col-md-6 col-lg-3">
-
-      <div>
-        <img src="/assets/images/research acj.png">
-      </div>
-
-      <div>
-        <div class="about mt-3 mb-3"> Proven </div>
-          <div class="text fs-5">
-            With a body of research to support our software.          </div>
-      </div>
-
-    </div>
-
-    <div class="item col-12 col-md-6 col-lg-3">
-
-      <div>
-        <img src="/assets/images/secureacj 1.png">
-      </div>
-
-      <div>
-        <div class="about mt-3 mb-3"> Secure </div>
-          <div class="text fs-5">
-            Your data is your own.          </div>
-      </div>
-
-    </div>
-
-    <div class="item col-12 col-md-6 col-lg-3">
-
-      <div>
-        <img src="/assets/images/c arm acj.png">
-      </div>
-
-      <div>
-        <div class="about mt-3 mb-3"> C-arm </div>
-          <div class="text fs-5">
-            One click away from your implant position during Hip Replacement.          </div>
-      </div>
-
-    </div>
-
-    <div class="item col-12 col-md-6 col-lg-3">
-
-      <div>
-        <img src="/assets/images/data acj.png">
-      </div>
-
-      <div>
-        <div class="about mt-3 mb-3"> Data </div>
-          <div class="text fs-5">
-            Data capture that facilitates clinical efficacy          </div>
-      </div>
-
-    </div>
-
-    <div class="item col-12 col-md-6 col-lg-3">
-
-      <div>
-        <img src="/assets/images/universal acj.png">
-      </div>
-
-      <div>
-        <div class="about mt-3 mb-3"> All you need </div>
-          <div class="text fs-5">
-            All the tools the arthroplasty surgeon needs.          </div>
-      </div>
-
-    </div>
-
 
   </div>
 </div>

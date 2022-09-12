@@ -9,9 +9,36 @@
 }
 
 
-.itemactive{
+.item-active{
   border-bottom: 3px solid #F05432;
   font-family: 'Roboto';
   color: #262262;
   font-weight: 600;
+}
+
+.nav-bg {
+  background-color: white;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.width-fit {
+  width:fit-content;
+}
+
+.nav-bar{
+  /* margin-left: 5vw; */
+  justify-content: center;
+}
+
+.btn-toggle{
+  margin-left: auto;
+  margin-right: 5vh;
+}
+
+.navbar-collapse{
+  text-align: -webkit-right;
+  margin-right: 3vw;
 }

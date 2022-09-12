@@ -5,6 +5,14 @@
   font-weight: 700;
 }
 
+.about-height {
+  height: 8rem;
+}
+
+.class-height {
+  min-height: 50rem;
+}
+
 .body {
   width: 90%;
   height: 80%;
