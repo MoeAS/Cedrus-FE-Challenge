@@ -1,5 +1,7 @@
 # Cedrus-FE-Challenge
 
+# This is an Angular frontend project
+
 ## Setup
 
 1) open cmd to any directory you want your project to be on
