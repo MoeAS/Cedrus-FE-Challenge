@@ -37,3 +37,15 @@
 .text {
   font-family: 'Roboto';
 }
+
+.error-class-hidden {
+  display: none;
+}
+
+.error-class-visible {
+  /* padding: 20px; */
+  width: fit-content;
+  /* text-align-last: center; */
+  /* margin-left: 25vw; */
+  margin: auto;
+}
